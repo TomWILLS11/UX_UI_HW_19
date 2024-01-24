@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    background-color: #1f1b30;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  
+  h1 {
+    font-size: 40px;
+    color: orange;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h3{
+    color: orange;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h4{
+    color: orange;
+    font-size: 24px;
+  }
+  
+  .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  
+  nav {
+    background-color: #1f1b30;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+  }
+  
+  .nav-left,
+  .nav-right {
+    display: flex;
+  }
+  
+  .nav-left a,
+  .nav-right a {
+    text-decoration: none;
+    color: orange;
+  }
+  
+  .name {
+    color: orange;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  header {
+    background-color: #373738;
+    padding: 15px;
+  }
+  header ul {
+    float: right;
+    color: white;
+  }
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  header p {
+    display: inline-block;
+  }
+  
+  .heroImg {
+    /* background-color: #EBEBEB; */
+    padding: 50px 15px;
+    background-color: #1f1b30;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero-container-name {
+    margin-bottom: 5px;
+    font-size: 50px;
+    color: orange;
+  }
+  .hero-container-sub {
+    font-weight: 400;
+    color: orange;
+    font-size: 32px;
+  }
+  .content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: #1f1b30;
+    padding: 5px;
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  footer ul {
+    /* list-style: none; */
+    /* padding-left: 5px;
+    align-items: center; */
+    padding: 20px 5px 20px 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+    font-size: 40px;
+  }
+  
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+  }
+  
+  /* My UX Skills Section */
+  .flexContainer {
+    background-color: #1f1b30;
+    display: flex;
+    /* padding: 30px 30px;  */
+    flex-direction: row; 
+  }
+  .flexContainer div {
+    flex: 0 0 33%; 
+    height: 300px;
+    padding: 10px;
+    margin: auto; 
+  }
+  
+  /* My Work Section */
+  .myWork {
+    padding: 10px 10px;  
+  }
+  .workGrid {
+    background-color: #EBEBEB;
+    padding: 30px 30px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    grid-gap: 20px;
+    grid-template-areas: 
+      "img1 content1"
+      "img2 content2"
+      "img3 content3";
+  }
+  .workGrid img {
+    width: 100%;
+  }
+  .circle-image {
+    border-radius: 50%;
+    width: 300px;  
+    height: 300px; 
+    object-fit: cover;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  @media only screen and (max-width: 600px) {
+    .workGrid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "img1"
+        "content1"
+        "img2"
+        "content2"
+        "img3"
+        "content3";
+    }
+  
+    .flexContainer {
+      flex-direction: column;
+    }
+  
+    .flexContainer > div {
+      width: 100%;
+    }
+  }
