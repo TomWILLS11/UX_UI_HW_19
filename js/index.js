@@ -1,4 +1,4 @@
-onsole.log("index.js loaded correctly")
+console.log("index.js loaded correctly")
 
 $(document).ready(function() {
     $('#downloadResumeButton').click(function() {
